@@ -23,7 +23,7 @@
       allocation_method: Static
       name: myPublicIP
     register: output_ip_address
-  - name: public IP for VM which will be created
+  - name: Dump public IP for VM which will be created
     debug:
       msg: "The public IP is {{ output_ip_address.state.ip_address }}."
   - name: Create Network Security Group that allows SSH
